@@ -116,6 +116,7 @@ Entrar no [oAuth](https://oauth.io/signup) e fazer _login_ com o **Github**
 
 <img src="https://img.shields.io/badge/-oAuthApps-2C8EBB?&
 style=for-the-badge&logoColor=fff&logo=app-store&logoWidth=20"/>
+
 <img  src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&logoWidth=25"/>
 
 Verificar as infomações do **App keys**
@@ -129,11 +130,11 @@ Em: ' `Key's and permission scope` ' informar os dados:
 |    |
 | ---|
 | client_id: `gerado pelo Github no OAuth Apps` |
-| client_secret: `gerado pelo Github no OAuth Apps`|                        |
+| client_secret: `gerado pelo Github no OAuth Apps`|
 | scope: `user` |
 |
 
-### O repositório do backend ta [aqui](https://github.com/douglasconstancio/backend-tags) 🎯
+O repositório do backend ta [aqui](https://github.com/douglasconstancio/backend-tags) 🎯
 
 ---
 

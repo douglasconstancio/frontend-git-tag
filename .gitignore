@@ -3,8 +3,10 @@
 # dependencies
 /node_modules
 
-/src/types
-
 /build
 
+/types
+
 .env
+
+*.d.ts

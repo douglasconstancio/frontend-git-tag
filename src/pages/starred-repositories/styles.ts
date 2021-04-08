@@ -1,4 +1,12 @@
 import styled from 'styled-components'
+import {
+    BLACK,
+    GREEN,
+    LIGHT_PURPLE,
+    OPACITY_WHITE,
+    WHITE,
+    YELLOW
+} from '../../styles/colors'
 
 interface IPosition {
     isFirst: boolean
@@ -43,8 +51,8 @@ export const NameTitle = styled.h2`
 `
 
 export const CoursePreview = styled.div`
-    background-color: #2A265F;
-    color: #fff;
+    background-color: ${ LIGHT_PURPLE };
+    color: ${ WHITE };
     padding: 30px;
     border-radius: 10px 0px 0px 10px;
     width: 220px;
@@ -58,7 +66,7 @@ export const CourseInfo = styled.div`
 `
 
 export const CourseTitleA = styled.a`
-    color: #fff;
+    color: ${ WHITE };
     display: inline-block;
     font-size: 14px;
     opacity: 0.6;
@@ -69,8 +77,8 @@ export const TagTitle = styled.span`
     margin-left: 8px;
     border-radius: 10px;
     font-weight: bold;
-    color: #000;
-    background-color: #fae13e;
+    color: ${ BLACK };
+    background-color: ${ YELLOW };
 `
 
 export const Wrapper = styled.section`
@@ -84,14 +92,14 @@ export const Wrapper = styled.section`
 export const SearchBox = styled.div`
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
     width: 1150px;
-    background-color: #ffffffde;
+    background-color: ${ OPACITY_WHITE };
     border-radius: 10px;
     height: 60px;
     display: flex;
 `
 
 export const FilterTitle = styled.h2`
-    color: #2A265F;
+    color: ${ LIGHT_PURPLE };
     margin: 20px;
     font-size: 18px;
 `
@@ -102,10 +110,10 @@ export const SearchField = styled.input`
     width: 100%;
     margin-right: 0;
     padding: 4px;
-    border: 2px solid #2A265F;
+    border: 2px solid ${ LIGHT_PURPLE };
     border-radius: 10px;
     outline: none;
-    color: #000;
+    color: ${ BLACK };
     margin: 10px 20px 0 0px;
     font-size: 16px;
 `
@@ -118,7 +126,7 @@ export const ListGroup = styled.div`
     border-radius: 10px;
     width: 1150px;
     min-width: 1150px;
-    background-color: #ffffffde;
+    background-color: ${ OPACITY_WHITE };
 `
 
 export const StarredRepositoryCard = styled.div<IPosition>`
@@ -139,7 +147,7 @@ export const SubTitleDescription = styled.h2`
     letter-spacing: 1px;
     margin: 10px 0;
     text-align: left;
-    color: #000;
+    color: ${ BLACK };
 `
 
 export const MESSAGE_EMPTY_ERROR = 'Informe um conteúdo para a Tag.'
@@ -147,7 +155,7 @@ export const MESSAGE_EMPTY_ERROR = 'Informe um conteúdo para a Tag.'
 export const MESSAGE_BUSINESS_ERROR = 'Esta tag já foi informada!'
 
 export const SubtitleID = styled(Subtitle)`
-    color: #000;
+    color: ${ BLACK };
 `
 
 export type TStarred = {
@@ -175,9 +183,10 @@ export const TagCard = styled.span<IMatch>`
     font-size: 14px;
     font-weight: bold;
     background-color: ${ props => props.isMatch
-        ? '#2A265F'
-        : '#118D16'};
-    color: #fff;
+        ? LIGHT_PURPLE
+        : GREEN
+    };
+    color: ${ WHITE };
     border-radius: 4px;
     padding: 4px;
     cursor: pointer;
@@ -189,11 +198,11 @@ export const PlaceAddButton = styled.div`
 `
 
 export const AddButton = styled.button`
-    background-color: #2A265F;
+    background-color: ${ LIGHT_PURPLE };
     border: 0;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: ${ WHITE };
     margin-right: 8px;
     font-size: 16px;
     padding: 12px 25px 12px 20px;
@@ -207,7 +216,7 @@ export const AddButton = styled.button`
 `
 
 export const NotFoundPlace = styled.div`
-    background-color: #ffffffde;
+    background-color: ${ OPACITY_WHITE };
     border-radius: 10px;
     height: 382px;
     padding: 24px;
@@ -217,7 +226,7 @@ export const NotFoundPlace = styled.div`
 `
 
 export const NotFoundMessage = styled.div`
-    color: #2A265F;
+    color: ${ LIGHT_PURPLE };
     font-size: 30px;
     align-self: center;
 `
@@ -246,7 +255,7 @@ export const BackgroundModal = styled.div`
 `
 
 export const Modal = styled.div`
-    background-color: #2A265F;
+    background-color: ${ LIGHT_PURPLE };
     border-radius: 10px;
     margin-top: 300px;
     height: 150px;
@@ -267,9 +276,9 @@ export const TagField = styled.input`
     padding: 4px;
     width: 280px;
     border-radius: 10px;
-    border: 2px solid #fff;
+    border: 2px solid ${ WHITE };
     outline: none;
-    color: #000;
+    color: ${ BLACK };
     margin: 10px 20px 0px 10px;
     text-transform: uppercase;
     font-size: 14px;

@@ -156,6 +156,7 @@ O repositório do backend ta [aqui](https://github.com/douglasconstancio/backend
 - Melhoras as tipagens (_type safe_);
 - Levar a autenticação via API do Github para o _backend_;
 - Melhorar as rotas (Criar uma rota específica para os repositórios e outra para as _tags_);
+- Mudar os nomes dos campos mantendo compatibilidade com os recebidos da API do Github;
 
 ---
 

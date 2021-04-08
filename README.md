@@ -51,6 +51,7 @@ Abaixo estão algumas das tecnologias utilizadas durante o desenvolvimento do pr
 - [OAuth-io](https://oauth.io/signin)
 - [OAuthJS](https://github.com/oauth-io/oauth-js)
 - [CreateReactApp](https://create-react-app.dev/docs/getting-started/)
+- [LoginWithGitHub](https://levelup.gitconnected.com/how-to-implement-login-with-github-in-a-react-app-bd3d704c64fc)
 
 ---
 
@@ -70,7 +71,11 @@ Bom, por toda ideia de Magrathea, espaço, mochileiro das galáxias... busquei u
 
 <img src="public/tag-modal.png">
 
-### 🖥️ Pesquisa de _Tags_:
+### 🖥️ Pesquisa de _Tags_ (as que deu "_match_" ficam em destaque roxo):
+
+<img src="public/search-screen-with-data.png">
+
+### 🖥️ Pesquisa de _Tags_ (sem registros encontrados):
 
 <img src="public/search-screen.png">
 
@@ -130,6 +135,16 @@ Em: ' `Key's and permission scope` ' informar os dados:
 | client_id: `gerado pelo Github no OAuth Apps` |
 | client_secret: `gerado pelo Github no OAuth Apps`|
 | scope: `user` |
+
+No diretório da raiz do projeto criar um arquivo `.env` com os seguintes dados:
+
+```bash
+REACT_APP_CLIENT_ID='client_id do OAuthApps'
+REACT_APP_CLIENT_SECRET='client_secret do OAuthApps'
+REACT_APP_REDIRECT_URI='http://localhost:3000/login'
+REACT_APP_API_DB='http://localhost:4000'
+REACT_APP_OAUTH_IO='public_key do oAuth-io'
+```
 
 O repositório do backend ta [aqui](https://github.com/douglasconstancio/backend-tags) 🎯
 

@@ -5,8 +5,6 @@
 
 /build
 
-/types
-
 .env
 
-*.d.ts
+react-app-env.d.ts

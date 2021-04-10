@@ -42,6 +42,7 @@ import {
 } from './styles'
 import Header from '../../components/Header/Header'
 import ironCat from '../../assets/iron-cat.png'
+import { BLACK, GREEN, RED, WHITE, YELLOW } from '../../styles/colors'
 
 const StarredRepositories: FC = () => {
     const { state } = useContext(AuthContext)
@@ -51,7 +52,6 @@ const StarredRepositories: FC = () => {
     const [ filter, setFilter ] = useState<string>('')
     const [ openModal, setOpenModal ] = useState<boolean>(false)
     const [ values, setValues ] = useState<TStarredInitial>(INITIAL_VALUES)
-
     const{ user: { login, id } } = state
 
     useEffect(() => {
@@ -342,8 +342,8 @@ const StarredRepositories: FC = () => {
                             <ModalButtonPlace>
                                 <ButtonActions
                                     width='60px'
-                                    color='#fff'
-                                    backgroundColor='#118D16'
+                                    color={ WHITE }
+                                    backgroundColor={ GREEN }
                                     onClick={
                                         values.repo_id
                                             ? handleAddTag
@@ -354,16 +354,16 @@ const StarredRepositories: FC = () => {
                                 { !values.repo_id && (
                                     <ButtonActions
                                         width='80px'
-                                        color='#fff'
-                                        backgroundColor='#ff4545'
+                                        color={ WHITE }
+                                        backgroundColor={ RED }
                                         onClick={ handleRemoveTag }>
                                         Remover
                                     </ButtonActions>
                                 )}
                                 <ButtonActions
                                     width='80px'
-                                    color='#000'
-                                    backgroundColor='#fae13e'
+                                    color={ BLACK }
+                                    backgroundColor={ YELLOW }
                                     onClick={ handleCloseModal }>
                                     Cancelar
                                 </ButtonActions>
